@@ -194,6 +194,9 @@ if __name__ == "__main__":
         counter += 1
 
         actions = env.getValidMoves(board, player)
+        print(actions)
+        plt.imshow(board)
+        plt.show()
         if len(actions) == 0:
             print(f"Episode len: {counter}, Looser: {player}")
             break
